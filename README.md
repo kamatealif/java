@@ -16,11 +16,24 @@ Each project is created using pure Java, focusing on fundamental programming con
 
 ## How to Run These Projects
 
-1. Fork this repository to your GitHub account
-2. Clone your forked repository to your local machine
-3. Navigate to the specific project directory
-4. Open the `App.java` file in your preferred Java IDE
-5. Run the application
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/kamatealif/java.git
+   ```
+
+2. **Navigate to the Project Directory**:
+   ```bash
+   cd java/[project-name]
+   ```
+
+3. **Compile and Run**:
+   - Compile the Java file(s):
+     ```bash
+     javac [FileName].java
+     ```
+   - Run the program:
+     ```bash
+     java [FileName]
 
 ## Prerequisites
 
@@ -37,4 +50,4 @@ This repository is primarily for personal learning purposes and is not currently
 Feel free to reach out if you have any questions about the projects or want to discuss Java programming in general.
 
 ---
-*This repository is maintained by [Your Name] and is part of a Java learning journey.*
+*This repository is maintained by alif kamate and is part of a Java learning journey.*
