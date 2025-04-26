@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/03_arithmetic/03_arithmetic.iml" filepath="$PROJECT_DIR$/03_arithmetic/03_arithmetic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04_if_else/04_if_else.iml" filepath="$PROJECT_DIR$/04_if_else/04_if_else.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05_randome_numbers/05_randome_numbers.iml" filepath="$PROJECT_DIR$/05_randome_numbers/05_randome_numbers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06_math/06_math.iml" filepath="$PROJECT_DIR$/06_math/06_math.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Documents.iml" filepath="$PROJECT_DIR$/Documents.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shoping cart project/shoping cart project.iml" filepath="$PROJECT_DIR$/shoping cart project/shoping cart project.iml" />
+    </modules>
+  </component>
+</project>
