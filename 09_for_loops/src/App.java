@@ -11,6 +11,10 @@ public class App{
         // calculate the sum of 10 numbers
         int total = sumOfNumbers(10);
         System.err.println("Sum of 10 numbers is: " + total);
+
+        // nested loops
+        System.out.println("Nested loops:");
+        nestedLoops(3);
     }
 
     // function for print hello world 5 times
@@ -27,5 +31,15 @@ public class App{
             sum = sum + i;
         }
         return sum;
+     }
+
+     // nested loops 
+     public static void nestedLoops(int n){
+        for (int i = 1; i <=n; i++){
+            for (int j = 1; j <=n ; j++){
+                System.out.printf("(%d, %d)", i, j);
+            }
+            System.out.println();
+        }
      }
 }
