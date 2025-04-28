@@ -42,4 +42,16 @@ public class App{
             System.out.println();
         }
      }
+
+     // infinite loops
+     public static void infiniteLoop1(){
+        for(int i =0 ; i > 10; i++){
+            System.out.println("Infinite loop 1: " + i);
+        }
+     }
+
+     public static void infiniteLoop2(){
+     for (;;){
+        System.out.println("Infinite loop 2: ");
+     }
 }
