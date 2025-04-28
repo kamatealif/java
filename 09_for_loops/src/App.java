@@ -15,6 +15,15 @@ public class App{
         // nested loops
         System.out.println("Nested loops:");
         nestedLoops(3);
+
+        // infinite loops
+        System.out.println("Infinite loops:");
+        // infiniteLoop1();
+        // infiniteLoop2();
+
+        // print the table of number
+        System.out.println("Table of 5:");
+        printTable(5);
     }
 
     // function for print hello world 5 times
@@ -54,4 +63,12 @@ public class App{
      for (;;){
         System.out.println("Infinite loop 2: ");
      }
+    }
+     // print the table of number
+     public static void printTable(int n) {
+        for (int i = 1; i <=10; i++){
+            System.out.printf("%d x %d = %d\n", n, i, n*i);
+        }
+     
+}
 }
