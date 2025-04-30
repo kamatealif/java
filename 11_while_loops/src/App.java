@@ -4,6 +4,9 @@ public class App{
 
         // EXECUTE CODE FOR THE SPECIFIED NUMBER OF TIMES
         specifiedNumber();
+
+        // CALCULATING THE SUM OF 1 TO 1 WITH WHILE LOOP
+        sumOfNumbers();
     }
 
     public static void test(){
@@ -24,4 +27,15 @@ public class App{
             c++;
         }
     }
+
+    // CALCULATING THE SUM OF 1 TO 1 WITH WHILE LOOP
+    public static void sumOfNumbers(){
+        int i = 1, sumOfNumbers = 0;
+        while( i <=10){
+            sumOfNumbers = sumOfNumbers + 1;
+            i++;
+        }
+        System.out.println("Sum of numbers from 1 to 10 is: " + sumOfNumbers);
+    }
+    
 }
