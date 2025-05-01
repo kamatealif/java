@@ -9,6 +9,10 @@ public class App{
 
         // BREAK STATEMENTS
         doBreak();
+
+        FOR LOOPS
+        doBreakFor();
+
     }
 
     public static void doTest(){
@@ -42,4 +46,15 @@ public class App{
         System.out.println(c);
         System.out.println("itration end");
     }
+
+    //  WE CAN ALSO DO THIS WITH THE FOR LOOPS
+    public static void doBreakFor(){
+        for (int i =1; i <=10; i++){
+            System.out.println(i);
+            if(i ==5){
+                break;
+            }
+        }
+    }
+    
 }
