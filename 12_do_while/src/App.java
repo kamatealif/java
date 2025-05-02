@@ -22,6 +22,10 @@ public class App{
         // continue statements inside do while loop
         System.out.println("continue statement do while loop");
         continueStatementDoWhile();
+
+        // continue statement inside the inner loop(nested Loop)
+        System.out.println("continue statement nested loop");
+        continueStatementNestedLoop();
         
 
     }
@@ -108,6 +112,20 @@ public class App{
         }while(i <=5);
     }
 
-    
+    // continue statement inside the inner loop(nested Loop)
+    public static void continueStatementNestedLoop(){
+    // outer loop
+        for(int i = 1; i <=4; i++){
+            // inner loop
+            for(int j = 1; j <=3; j++){
+                // continue statement in inner loop to skip the execution when i ==3;
+                if (i == 3){
+                    continue;
+                }
+                System.out.printf("(%d, %d)\n", i, j);
+            }
+            System.out.println();
+      }
+    }
     
 }
