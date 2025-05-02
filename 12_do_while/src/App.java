@@ -16,6 +16,14 @@ public class App{
         System.out.println("continue statement");
         continueStatement();
 
+        System.out.println("continue statement while loop");
+        continueStatementWhile();
+
+        // continue statements inside do while loop
+        System.out.println("continue statement do while loop");
+        continueStatementDoWhile();
+        
+
     }
 
     public static void doTest(){
@@ -71,7 +79,35 @@ public class App{
     }
 
     // continue statements inside while loop
-    
+    public static void continueStatementWhile(){
+        int c = 0;
+        // while loop 
+        while ( c <=5){
+            // continue sue when c ==3
+            if (c ==3){
+                c++;
+                continue;
+            }
+            System.out.println(c + " ");
+            c++;
+        }
+    }
+
+    // continue statements inside do while loop
+    public static void continueStatementDoWhile(){
+        int i = 0;
+        do{
+            // continue statement used when i == 3
+            if( i ==3){
+                i++;
+                continue;
+            }
+            System.out.println(i + " ");
+            i++;
+
+        }while(i <=5);
+    }
+
     
     
 }
