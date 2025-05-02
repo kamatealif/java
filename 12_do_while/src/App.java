@@ -10,8 +10,11 @@ public class App{
         // BREAK STATEMENTS
         doBreak();
 
-        FOR LOOPS
+        // FOR LOOPS
         doBreakFor();
+
+        System.out.println("continue statement");
+        continueStatement();
 
     }
 
@@ -56,5 +59,19 @@ public class App{
             }
         }
     }
+
+     // continue statements
+     public static void continueStatement(){
+        for(int i = 0; i < 10; i++){
+            if(i == 5){
+                continue;
+            }
+            System.out.println(i);
+        }
+    }
+
+    // continue statements inside while loop
+    
+    
     
 }
