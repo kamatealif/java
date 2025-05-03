@@ -1,9 +1,19 @@
 public class App{
+
+    void demoFunc(double n){
+        // exit method if condition is met
+        if( n < 9) return;
+
+        // increment the number otherwise
+        n++;
+    }
     void calc(int a, int b){
         int res = (a + b)/ 10;
         System.out.println(res);
     }
     public static void main(String[] args){
+        new App().demoFunc(10);
+        System.out.println("proram Executed Sucessfully");
         new App().calc(5,7);
         System.out.println("No return keyword is used, and proram executed successfully");
         doTest();
@@ -144,4 +154,5 @@ public class App{
         return res;
     }
     
+
 }
