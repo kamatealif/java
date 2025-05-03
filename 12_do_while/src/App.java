@@ -1,5 +1,11 @@
 public class App{
+    void calc(int a, int b){
+        int res = (a + b)/ 10;
+        System.out.println(res);
+    }
     public static void main(String[] args){
+        new App().calc(5,7);
+        System.out.println("No return keyword is used, and proram executed successfully");
         doTest();
 
         System.out.println("one time itration");
@@ -27,6 +33,10 @@ public class App{
         System.out.println("continue statement nested loop");
         continueStatementNestedLoop();
         
+        // return keyword
+        System.out.println("return keyword");
+        System.out.println(avg(10, 20));
+
 
     }
 
@@ -126,6 +136,12 @@ public class App{
             }
             System.out.println();
       }
+    }
+
+    // return keyword
+    public static double avg(double x , double y){
+        double res = (x + y)/2;
+        return res;
     }
     
 }
