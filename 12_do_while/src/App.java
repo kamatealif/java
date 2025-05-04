@@ -11,7 +11,26 @@ public class App{
         int res = (a + b)/ 10;
         System.out.println(res);
     }
+
+     // Method with void return type
+    void demo(double v) {
+
+        // Condition check
+        if (v < 0) {
+            System.out.println(v);
+            return;
+        } else {
+            ++v;
+        }
+    }
     public static void main(String[] args){
+
+
+        // Call the method
+        new App().demo(-1);
+
+        // Display message to illustrate successful execution
+        System.out.println("Program executed successfully");
         new App().demoFunc(10);
         System.out.println("proram Executed Sucessfully");
         new App().calc(5,7);
