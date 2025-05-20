@@ -1,16 +1,59 @@
+import java.util.Scanner;
+
 class Calculator {
     public int add(int num1, int num2){
         System.out.println("Inside the Add function");
         return num1 + num2;
     }
+
+    public int substract (int num1, int num2){
+        return num1 - num2;
+    }
+
+    public int multiplication (int num1, int num2){
+        return num1 * num2;
+    }
+
+    public int division(int num1, int num2){
+        if(num1 == 0){
+            System.out.println("Can't devide number by zero");
+            return 0;
+        }else{
+            return num1 / num2;
+        }
+    }
 }
 
 class App{
   public static void main(String args[]){
-
+      Scanner scanner = new Scanner(System.in);
       Calculator instance = new Calculator();
-      int result = instance.add(84, 26);
 
-      System.out.println("The Result is: "+ result);
+      int num1 = 10;
+      int num2 = 20;
+    System.out.println("Enter a number  between 1 - 4 ");
+      String choice = scanner.nextLine();
+
+      switch (choice){
+          case "1":
+            int result = instance.add(num1, num2);
+            System.out.println("Addition is: "  + result);
+            break;
+          case "2":
+              System.out.println("Substraction is: "  +  instance.substract(num1, num2));
+              break;
+          case "3":
+              System.out.println("Multiplication is: "  +  instance.multiplication(num1, num2));
+              break;
+          case "4":
+              System.out.println("Division is: "  +  instance.division(num1, num2));
+              break;
+          default:
+              System.out.println("Enter a number between 1 - 4");
+
+      }
+
+      scanner.close();
+
   }
 }
