@@ -1,30 +1,42 @@
 import java.util.Scanner;
 
 class Calculator {
-    public int add(int num1, int num2){
+    public int add(int num1, int num2) {
         System.out.println("Inside the Add function");
         return num1 + num2;
     }
 
-    public int substract (int num1, int num2){
+    public int substract(int num1, int num2) {
         return num1 - num2;
     }
 
-    public int multiplication (int num1, int num2){
+    public int multiplication(int num1, int num2) {
         return num1 * num2;
     }
 
-    public int division(int num1, int num2){
-        if(num1 == 0){
+    public int division(int num1, int num2) {
+        if (num1 == 0) {
             System.out.println("Can't devide number by zero");
             return 0;
-        }else{
+        } else {
             return num1 / num2;
         }
     }
+
+    public int add(int num1, int num2){
+        return num1 + num2
+    }
+
+    // what if we need to pass more parameters than 2 simply we can create a same
+    // method with 3 parameters
+    public int add(int num1, int num2, int num3){
+        return num1 + num2 + num2
+    }
+
+    // this possible and i njava we called this is an a method overloading
 }
 
-class App{
+class App {
   public static void main(String args[]){
       Scanner scanner = new Scanner(System.in);
       Calculator instance = new Calculator();
@@ -52,6 +64,9 @@ class App{
               System.out.println("Enter a number between 1 - 4");
 
       }
+      int r1 = instance.add(10,20)
+
+      int r2 =  instance.add(10,20,30)
 
       scanner.close();
 
